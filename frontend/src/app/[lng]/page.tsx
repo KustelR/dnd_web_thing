@@ -1,10 +1,10 @@
-import Image from "next/image";
 import {Header, Footer} from "@/components";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="">
       <Header></Header>
+      dgfdsgdfgdfsgdsagasdg
       <Footer></Footer>
     </div>
   );
