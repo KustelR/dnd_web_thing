@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export default function CustomButton({children, lng}: {children: React.ReactNode, lng: string}) {
+export default function CustomButton({
+  children,
+  lng,
+}: {
+  children: React.ReactNode;
+  lng: string;
+}) {
   return (
-    <button className="
+    <button
+      className="
     bg-black
     px-2
     hover:bg-cyan-500
@@ -12,6 +19,9 @@ export default function CustomButton({children, lng}: {children: React.ReactNode
     duration-500
     active:duration-75
     focus:outline-2
-    focus:outline-cyan-300" >{children}</button>
-  )
+    focus:outline-cyan-300"
+    >
+      {children}
+    </button>
+  );
 }
