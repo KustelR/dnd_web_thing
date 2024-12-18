@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mirror_locales": "node ./public/locales/automation"
   },
   "dependencies": {
     "accept-language": "^3.0.20",

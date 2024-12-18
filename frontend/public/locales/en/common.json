@@ -1,3 +1,5 @@
 {
-  "title": "dnd thing"
+  "title": "dnd thing",
+  "nav_placeholder": "here be nav",
+  "nav_home": "home"
 }
