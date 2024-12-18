@@ -6,15 +6,15 @@ export default async function Page({
   params,
 }: {
   children: React.ReactNode;
-  params: { lng: string };
+  params: Promise<{ lng: string }>;
 }) {
-  const { lng } = params;
+  const { lng } = await params;
   const { t } = await useTranslation(lng, undefined);
 
   return (
     <div className="">
-      <Header></Header>
-      {t("title")};<Footer></Footer>
+      <Header lng={lng}></Header>
+      <Footer></Footer>
     </div>
   );
 }
