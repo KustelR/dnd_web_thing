@@ -1,5 +1,7 @@
 {
-  "title": "dnd thing",
-  "nav_placeholder": "here be nav",
-  "nav_home": "home"
+  "title": "ДнД штука",
+  "nav_placeholder": "да будет навбар",
+  "nav_home": "домой",
+  "nav_play": "играть",
+  "nav_master": "мастеру"
 }
