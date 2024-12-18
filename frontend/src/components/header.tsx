@@ -6,8 +6,8 @@ export default async function Header(props: { lng: string }) {
   const { lng } = props;
   const { t } = await useTranslation(lng, undefined);
   return (
-    <header className="p-2 bg-emerald-700 bg-opacity-10">
-      <h1 className="font-bold">{t("title")}</h1>
+    <header className="flex p-2  border-b-2 dark:border-gray-600">
+      <h1 className="font-bold pr-4">{t("title")}</h1>
       <Nav lng={lng}></Nav>
     </header>
   );

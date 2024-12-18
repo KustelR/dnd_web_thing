@@ -10,7 +10,7 @@ export default async function nav(props: { lng: string }) {
 
   return (
     <nav className="">
-      <ul className="flex [&>*]:mr-2 [&>*]:px-1 [&>*]:bg-emerald-800 [&>*]:bg-opacity-0">
+      <ul className="flex [&>*]:mr-2 [&>*]:px-2 [&>*]:bg-black [&>*]:dark:bg-white  [&>*]:bg-opacity-0 [&>*]:dark:bg-opacity-0 [&>*]:rounded-lg">
         <li className={liClassName}>
           <Link href={`/${lng}/`}>{t("nav_home")}</Link>
         </li>
