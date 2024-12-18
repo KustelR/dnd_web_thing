@@ -1,5 +1,6 @@
 import { Header, Footer } from "@/components";
 import { useTranslation } from "@/app/i18n/index";
+import Chat from "@/components/chat";
 
 export default async function Page({
   children,
@@ -12,9 +13,8 @@ export default async function Page({
   const { t } = await useTranslation(lng, undefined);
 
   return (
-    <div className="">
-      <Header lng={lng}></Header>
-      <Footer></Footer>
+    <div className="h-full">
+      <Chat lng={lng}></Chat>
     </div>
   );
 }

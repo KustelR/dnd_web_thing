@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { dir } from "i18next";
 import { languages } from "@/app/i18n/settings";
+import { Footer, Header } from "@/components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,9 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header lng={lng}></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
