@@ -35,7 +35,6 @@ async function mirrorTranslations() {
             encoding: "utf-8",
           }),
         );
-        console.log(Object.entries(originObject), targetObject);
         Object.keys(originObject).forEach((key) => {
           if (
             originObject.hasOwnProperty(key) &&

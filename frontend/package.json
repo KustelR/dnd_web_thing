@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "mirror_locales": "node ./public/locales/automation"
+    "compile_locale": "tsc .\\public\\locales\\automation.ts",
+    "mirror_locale": "node .\\public\\locales\\automation.js",
+    "locale": "npm run compile_locale && npm run mirror_locale && del .\\public\\locales\\automation.js"
   },
   "dependencies": {
     "accept-language": "^3.0.20",
