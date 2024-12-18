@@ -1,3 +1,5 @@
-export { default as Header } from "@/components/header";
-export { default as Footer } from "@/components/footer";
-export { default as Nav } from "@/components/nav";
+export { default as Header } from "./header";
+export { default as Footer } from "./footer";
+export { default as Nav } from "./nav";
+export { default as chat } from "./chat";
+export {default as Button } from "./CustomButton";
