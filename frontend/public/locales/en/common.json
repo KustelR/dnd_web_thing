@@ -1,7 +1,9 @@
 {
   "title": "dnd thing",
+  "welcome_bigtext": "Uhn... Welcome, i guess",
   "nav_placeholder": "here be nav",
   "nav_home": "home",
   "nav_play": "play",
-  "nav_master": "for master"
+  "nav_master": "for master",
+  "loremipsum1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ligula ac odio dignissim congue. Vestibulum iaculis metus diam, sit amet luctus diam rhoncus ac. Fusce sit amet faucibus augue, quis consequat metus. Nunc consequat nisl lorem, eget volutpat orci fringilla sit amet. Nunc aliquet, nunc vel sodales egestas, purus mi pretium arcu, id mollis nunc nunc vel ante. Duis congue nulla ac sem porta ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean rutrum elementum magna a auctor. In sed lacus in lacus ullamcorper suscipit."
 }

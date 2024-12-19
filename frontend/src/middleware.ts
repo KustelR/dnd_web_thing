@@ -2,16 +2,20 @@ import { NextResponse } from "next/server";
 import acceptLanguage from "accept-language";
 import type { NextRequest } from "next/server";
 import { fallbackLng, languages, cookieName } from "@/app/i18n/settings";
+import * as fs from "fs/promises";
+import path from "path";
+import loadImage from "@/scripts/loadImage";
 
 acceptLanguage.languages(languages);
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|sw.js|site.webmanifest).*)",
   ],
 };
 
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
+  console.log(req.nextUrl.basePath);
   let lng: string | null | undefined;
 
   if (req.cookies.has(cookieName)) {

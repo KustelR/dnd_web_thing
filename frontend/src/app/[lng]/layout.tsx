@@ -34,10 +34,8 @@ export default async function RootLayout({
 }) {
   const { lng } = await params;
   return (
-    <html lang={lng} dir={dir(lng)}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html className="font-['Inter']" lang={lng} dir={dir(lng)}>
+      <body className={""}>
         <Header lng={lng}></Header>
         {children}
         <Footer></Footer>
